@@ -53,7 +53,27 @@ p {
     background: #f7c08a;
 }
 
-/* Nav Bar */
+.btn-light {
+    background: #f4f4f4;
+    color: #333;
+}
+
+.bg-dark {
+    background: #333;
+    color: #fff;
+}
+
+.bg-light {
+    background: #f4f4f4;
+    color: #333;
+}
+
+.bg-primary {
+    background: #f7c08a;
+    color: #333;
+}
+
+/* Nav Bar Styling*/
 #navbar {
     background-color: #333;
     color: #fff;
@@ -90,6 +110,8 @@ p {
     color: #f7c08a;
 }
 
+/* Show Case Styling */
+
 #showcase {
     background: url(../img/showcase.jpg) no-repeat center center/cover;
     height: 600px;
@@ -112,4 +134,30 @@ p {
 
 #showcase .showcase-content p {
     padding-bottom: 20px;
+}
+
+/* Info Content Styling */
+
+#home-info {
+    height: 400px;
+}
+
+#home-info .info-img {
+    float: left;
+    width: 50%;
+    background: url(../img/photo-1.jpg) no-repeat;
+    min-height: 100%;
+}
+
+#home-info .info-content {
+    float: right;
+    width: 50%;
+    min-height: 100%;
+    text-align: center;
+    overflow: hidden;
+    padding: 50px 30px;
+}
+
+#home-info .info-content p {
+    padding-bottom: 30px;
 }
