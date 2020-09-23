@@ -161,3 +161,15 @@ p {
 #home-info .info-content p {
     padding-bottom: 30px;
 }
+
+/* Features section */
+.box {
+    float: left;
+    width: 33.33%;
+    padding: 50px;
+    text-align: center;
+}
+
+.box i {
+    padding-bottom: 10px;
+}
