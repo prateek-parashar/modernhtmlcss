@@ -243,3 +243,26 @@ p {
     float: left;
     margin-right: 20px;
 }
+
+/* Contact form  */
+
+#contact-form .form-group {
+    padding-bottom: 20px;
+}
+
+#contact-form .form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#contact-form .form-group input,
+#contact-form .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+#contact-form .form-group textarea {
+    height: 200px;
+    resize: none;
+}
