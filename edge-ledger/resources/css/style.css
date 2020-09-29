@@ -68,3 +68,30 @@ img {
 .navbar .logo {
     font-weight: 400;
 }
+
+/* Hero overlay */
+
+.hero {
+    background: url(../img/home/showcase.jpg) no-repeat center center/cover;
+    height: 100vh;
+    position: relative;
+    color: #fff;
+}
+
+.hero .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.content h1 {
+    font-size: 3rem;
+}
+
+.content p {
+    font-size: 1.2rem;
+    padding: 20px 30px;
+    max-width: 600px;
+}

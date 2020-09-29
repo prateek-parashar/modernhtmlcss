@@ -6,3 +6,18 @@
 .text-secondary {
     color: #0284d0;
 }
+
+.btn {
+    border: none;
+    padding: 10px 20px;
+}
+
+.btn:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background: #28a745;
+    color: #fff;
+}
