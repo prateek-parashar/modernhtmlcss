@@ -86,12 +86,26 @@ img {
     height: 100%;
 }
 
-.content h1 {
+.hero .content h1 {
     font-size: 3rem;
 }
 
-.content p {
+.hero .content p {
     font-size: 1.2rem;
     padding: 20px 30px;
     max-width: 600px;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.hero * {
+    z-index: 3;
 }
