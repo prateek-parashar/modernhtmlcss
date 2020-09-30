@@ -109,3 +109,21 @@ img {
 .hero * {
     z-index: 3;
 }
+
+/* Icons Styling */
+.icons {
+    padding: 30px;
+}
+
+.icons h3 {
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.icons i {
+    background-color: #28a745;
+    color: white;
+    padding: 1rem;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
