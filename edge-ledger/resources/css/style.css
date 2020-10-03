@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: "Open Sans", sans-serif;
     background: #fff;
@@ -49,6 +53,10 @@ img {
     width: 100%;
     top: 0px;
     padding: 0 30px;
+}
+
+.navbar.top {
+    background: transparent;
 }
 
 .navbar ul {
