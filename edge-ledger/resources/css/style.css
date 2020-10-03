@@ -236,3 +236,35 @@ img {
         font-size: 0.9rem;
     }
 }
+
+/* Blog Page Styling */
+
+.post {
+    display: flex;
+    justify-content: center;
+}
+
+#post {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    align-items: center;
+}
+
+#post .meta {
+    align-self: flex-end;
+}
+
+.post h2 {
+    font-size: 2rem;
+    padding: 40px 20px;
+    border-bottom: #ccc 1px solid;
+}
+
+.post p {
+    padding: 0px 20px;
+}
+
+.post img {
+    width: 50%;
+}
