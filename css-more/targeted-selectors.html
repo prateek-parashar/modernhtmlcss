@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Targeted selectors</title>
+
+        <style>
+            /* The selector below selects all the p elements which are direct childs of the div elements */
+            div > p {
+                background: #dddddd;
+            }
+            /* The selector below selects the p tag which is directly below a div tag */
+            div + p {
+                background: #333;
+                color: #ffffff;
+            }
+
+            /* The selector selects all the links tags with the help of the attribute assinged to it */
+            a[target] {
+                background: red;
+                color: #ffffff;
+            }
+
+            /* The selector selects all the links tags with the specific value of the attribute set to blank */
+            a[target="_blank"] {
+                background: #343434;
+            }
+
+            /* A use case where we use the attribute based selectors to style the input components of a form*/
+            input[type="text"],
+            input[type="email"] {
+                width: 100%;
+                margin-bottom: 9px;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <ul>
+                <li>Item 1</li>
+                <li><p>Item 2 inside a paragraph</p></li>
+                <li>Item 3</li>
+            </ul>
+        </div>
+        <p>Lorem ipsum dolor sit amet.</p>
+
+        <ul>
+            <li><a href="test.test">Link 1</a></li>
+            <li><a href="test.test" target="_self">Link 2</a></li>
+            <li><a href="https://google.com" target="_blank">Google</a></li>
+        </ul>
+
+        <form action="post">
+            <input type="text" placeholder="Name" />
+            <input type="email" placeholder="Email" />
+            <input type="submit" value="Submit" />
+        </form>
+    </body>
+</html>
