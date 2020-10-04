@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Key Frames animations</title>
+
+        <style>
+            body {
+                background: #333333;
+            }
+
+            .box {
+                height: 100px;
+                width: 100px;
+                position: relative;
+                top: 0px;
+                left: 0px;
+                background: #ffffff;
+                animation: animate-to-circle 9s forwards ease;
+            }
+
+            @keyframes animate-to-circle {
+                25% {
+                    top: 0px;
+                    left: 600px;
+                    border-radius: 0 50% 0 0;
+                    background: red;
+                }
+
+                50% {
+                    top: 600px;
+                    left: 600px;
+                    border-radius: 0 50% 50% 0;
+                    background: green;
+                }
+
+                75% {
+                    top: 600px;
+                    left: 0px;
+                    border-radius: 0 50% 50% 50%;
+                    background: yellow;
+                }
+
+                100% {
+                    top: 0px;
+                    left: 0px;
+                    border-radius: 50%;
+                    background: white;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box"></div>
+    </body>
+</html>
