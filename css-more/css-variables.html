@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CSS Variables</title>
+
+        <style>
+            /* Css Variables are re-usable styles that help us in changing things quickly */
+            /* Css variables are defined within a scope, for example, the variables below are put in the 
+            * Root scope, and hence can be used anywhere in the html document */
+            :root {
+                --primary-color: steelblue;
+                --secondary-color: skyblue;
+                --light-color: #f4f4f4;
+                --max-width: 1100px;
+            }
+
+            * {
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+            }
+
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+                line-height: 1.7;
+                background: #f4f4f4;
+            }
+
+            header h1 {
+                text-align: center;
+                background: var(--primary-color);
+                color: #fff;
+                border-bottom: var(--light-color) 5px solid;
+            }
+
+            .container {
+                display: flex;
+                margin: auto;
+                max-width: var(--max-width);
+            }
+
+            .box {
+                height: 400px;
+                background: var(--secondary-color);
+                margin: 5rem;
+                padding: 3rem;
+            }
+
+            .box h3 {
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Css Variables</h1>
+        </header>
+        <div class="container">
+            <div class="box box-1">
+                <h3>
+                    Heading
+                </h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, illo.</p>
+            </div>
+            <div class="box box-2">
+                <h3>
+                    Heading
+                </h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, illo.</p>
+            </div>
+            <div class="box box-3">
+                <h3>
+                    Heading
+                </h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, illo.</p>
+            </div>
+        </div>
+    </body>
+</html>
