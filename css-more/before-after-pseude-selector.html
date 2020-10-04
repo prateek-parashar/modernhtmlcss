@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Before After Pseudo Selectors</title>
+
+        <style>
+            /**
+            * The :after psudo selector adds the astrix at the end of the value name
+            * The thing of note here is that the '*' is never added in the markup. 
+            * It's generated solely via CSS
+            */
+            .is-required:after {
+                content: "*";
+                color: red;
+                padding: 2px;
+            }
+
+            /* Similarly, we can use before to set it just before that particular html element */
+
+            .is-required:before {
+                content: "*";
+                color: black;
+                padding: 2px;
+            }
+
+            /* One specific use case for the before psudo selector is in setting the background images
+            * and fading them with the opacity value. 
+            * While doing that keep in mind that the value of the z-index also needs to be changes
+            * A similar example is present in the hero image of the edge-ledger project
+            */
+
+            /**
+            * An important thing to remember is the distinction between pseudo elements and pseudo selectors
+            **/
+        </style>
+    </head>
+    <body>
+        <label class="is-required" for="Name">Name</label>
+        <input type="text" />
+    </body>
+</html>
