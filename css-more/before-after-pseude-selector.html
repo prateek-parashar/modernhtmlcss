@@ -29,7 +29,17 @@
             * and fading them with the opacity value. 
             * While doing that keep in mind that the value of the z-index also needs to be changes
             * A similar example is present in the hero image of the edge-ledger project
-            */
+
+            An example of that is ->
+            .hero::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0, 0, 0, 0.6);
+            }
 
             /**
             * An important thing to remember is the distinction between pseudo elements and pseudo selectors
