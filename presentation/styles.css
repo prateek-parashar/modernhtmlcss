@@ -4,7 +4,82 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 :root {
     --full-height: 100vh;
     --full-width: 100vw;
+    --page-1-color: steelblue;
+    --page-2-color: tan;
+    --page-3-color: teal;
+    --page-4-color: slateblue;
+    --animate-speed: 1s;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.4;
+    color: #fff;
+    overflow: hidden;
+}
+
+#page-1 {
+    background: var(--page-1-color);
+}
+
+#page-2 {
+    background: var(--page-2-color);
+}
+
+#page-3 {
+    background: var(--page-3-color);
+}
+
+#page-4 {
+    background: var(--page-4-color);
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    height: var(--full-height);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0px 4rem;
+}
+
+.page h1 {
+    font-size: 4rem;
+    line-height: 1.2;
+    margin: 1rem;
+}
+
+.page p {
+    font-size: 1.4rem;
+}
+
+.btn {
+    display: inline-block;
+    border: none;
+    margin: 20px;
+    padding: 10px 20px;
+    background: #fff;
+    color: #333333;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: all ease 400ms;
+}
+
+.btn:hover,
+.btn-dark {
+    background: #333333;
+    color: #fff;
+}
+
+.btn-dark:hover {
+    background: #ffffff;
+    color: #333333;
 }
