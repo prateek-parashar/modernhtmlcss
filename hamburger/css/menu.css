@@ -40,7 +40,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: ease 300ms;
+    transition: ease 600ms;
 }
 
 /* Hamburger top and bottom Lines */
@@ -75,4 +75,68 @@
 /* Rotate on Hover when checked  */
 .menu-wrap .toggler:checked:hover + .hamburger > div {
     transform: rotate(225deg);
+}
+
+.menu-wrap .menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+}
+
+.menu-wrap .menu > div {
+    background: var(--overlay-color);
+    width: 300vw;
+    height: 300vh;
+    display: flex;
+    flex: none;
+    align-items: center;
+    justify-content: center;
+    transform: scale(0);
+    transition: all 400ms ease;
+    border-radius: 50%;
+}
+
+.menu-wrap .menu > div > div {
+    text-align: center;
+    max-width: 90vw;
+    max-height: 100vh;
+    opacity: 0;
+    transition: opacity 400ms ease;
+}
+
+.menu a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 400ms ease;
+}
+
+.menu a:hover {
+    color: var(--secondary-color);
+}
+
+.menu li {
+    list-style: none;
+    color: #ffffff;
+    font-size: 1.5rem;
+    padding: 1.7rem;
+}
+
+/* Animation of the menu pop up */
+.menu-wrap .toggler:checked ~ div {
+    visibility: visible;
+}
+
+.menu-wrap .toggler:checked ~ div > div {
+    transform: scale(1);
+}
+
+.menu-wrap .toggler:checked ~ div > div > div {
+    opacity: 1;
 }
