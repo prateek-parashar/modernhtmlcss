@@ -38,7 +38,7 @@ a {
 
 .hero::before {
     content: "";
-    background: url("https://source.unsplash.com/o5aUAcb-cYw/1600x900") center center/cover no-repeat;
+    background: url("https://source.unsplash.com/7INv-0bcyZs/1600x900") center center/cover no-repeat;
     position: absolute;
     top: 0;
     left: 0;
