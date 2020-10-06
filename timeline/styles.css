@@ -1,0 +1,38 @@
+:root {
+    --primary-color: #660066;
+    --secondary-color: #800080;
+    --max-width: 1100px;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--primary-color);
+    color: #ffffff;
+    font: normal 1rem/1.5 "Arial", sans-serif;
+    overflow-x: hidden;
+    padding-bottom: 50px;
+}
+
+#main-header {
+    background: var(--secondary-color);
+    padding: 4rem 0;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: var(--max-width);
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.3rem;
+}
+
+.container h3 {
+    font-weight: 200;
+}
