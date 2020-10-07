@@ -36,3 +36,52 @@ h1 {
 .container h3 {
     font-weight: 200;
 }
+
+/* Styling for the timeline */
+#timeline ul {
+    padding: 50px 0;
+}
+
+/* The li element creates the central line */
+
+#timeline li {
+    list-style: none;
+    padding-top: 50px;
+    position: relative;
+    width: 4px;
+    background: #ffffff;
+    margin: 0 auto;
+}
+
+/* Boxes */
+#timeline ul li div {
+    position: relative;
+    bottom: 0;
+    width: 500px;
+    padding: 1rem;
+    background: var(--secondary-color);
+    transition: all 500ms ease-in-out;
+}
+
+/* Right Side */
+#timeline ul li:nth-child(odd) div {
+    left: 40px;
+}
+
+/* Left Side */
+#timeline ul li:nth-child(even) div {
+    left: -529px;
+}
+
+/* Creating the timeline dots */
+#timeline ul li::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 25px;
+    height: 25px;
+    background: var(--secondary-color);
+    transform: translateX(-50%);
+    border-radius: 50%;
+}
