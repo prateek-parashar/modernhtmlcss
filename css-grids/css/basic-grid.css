@@ -15,6 +15,8 @@
     /* Final code with perfect responsive layout */
     /* By using auto-fill, we do not explicitly specify the number of columns that we need, hence 
     we let the algorithm decide when it's fit to use more columns, that way, it's so much easier
-    to create responsive layouts */
+    to create responsive layouts
+    Now, there's also a property calles as auto-fit, wherein it stretches the items to fit 
+    in the entire width of the container */
     grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
 }
