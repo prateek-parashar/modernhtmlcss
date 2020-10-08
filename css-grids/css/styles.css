@@ -1,0 +1,20 @@
+.grid-container {
+    display: grid;
+    gap: 1rem;
+
+    /* We can create columular layouts like this for each column */
+    /* grid-template-columns: 1fr 1fr 1fr ; */
+
+    /* This is a much better way to write code when we have to repeat the styling */
+    /* grid-template-columns: repeat(12, 1fr); */
+
+    /* Here, we have control over the sizing, using minmax, we can specify the minimum and 
+     the maximum size of the grid. Hence, we get better sizing, but overflows are a problem here */
+    /* grid-template-columns: repeat(12, minmax(240px, 1fr)); */
+
+    /* Final code with perfect responsive layout */
+    /* By using auto-fill, we do not explicitly specify the number of columns that we need, hence 
+    we let the algorithm decide when it's fit to use more columns, that way, it's so much easier
+    to create responsive layouts */
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+}
