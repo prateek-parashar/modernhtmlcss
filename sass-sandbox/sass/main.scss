@@ -48,3 +48,27 @@ a {
         color: coral;
     }
 }
+
+// This is the value which can be extended across the classes
+%btn-shared {
+    cursor: pointer;
+    text-decoration: none;
+    border: none;
+    padding: 0.7rem 2rem;
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+.btn {
+    &-dark {
+        @extend %btn-shared;
+        background: $dark-color;
+        color: $light-color;
+    }
+
+    &-light {
+        @extend %btn-shared;
+        color: $dark-color;
+        background: $light-color;
+    }
+}
