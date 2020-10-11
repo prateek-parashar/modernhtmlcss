@@ -1,1 +1,13 @@
-body{background:cyan}
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: #f4f4f4;
+  color: #333333;
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+}

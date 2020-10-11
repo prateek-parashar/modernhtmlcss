@@ -1,5 +1,14 @@
-$color: cyan;
+@import 'variables';
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
 
 body {
-    background: $color;
+    background: $light-color;
+    color: $dark-color;
+    font-family: $font-stack;
+    line-height: 1.5;
 }
