@@ -1,4 +1,4 @@
-@import 'variables';
+@import "variables";
 
 * {
     margin: 0px;
@@ -11,4 +11,40 @@ body {
     color: $dark-color;
     font-family: $font-stack;
     line-height: 1.5;
+}
+
+header {
+    background: $dark-color;
+    color: $light-color;
+
+    h1 {
+        font-size: 2.3rem;
+        text-align: center;
+    }
+}
+
+.section {
+    padding: 3rem;
+
+    h3 {
+        font-size: 1.6rem;
+    }
+
+    &-a {
+        background: $primary-color;
+        color: $light-color;
+    }
+
+    &-b {
+        background: $secondary-color;
+        color: $light-color;
+    }
+}
+
+a {
+    color: #333333;
+
+    &:hover {
+        color: coral;
+    }
 }

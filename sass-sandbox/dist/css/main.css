@@ -11,3 +11,39 @@ body {
   font-family: Arial, sans-serif;
   line-height: 1.5;
 }
+
+header {
+  background: #333333;
+  color: #f4f4f4;
+}
+
+header h1 {
+  font-size: 2.3rem;
+  text-align: center;
+}
+
+.section {
+  padding: 3rem;
+}
+
+.section h3 {
+  font-size: 1.6rem;
+}
+
+.section-a {
+  background: steelblue;
+  color: #f4f4f4;
+}
+
+.section-b {
+  background: skyblue;
+  color: #f4f4f4;
+}
+
+a {
+  color: #333333;
+}
+
+a:hover {
+  color: coral;
+}
